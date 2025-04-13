@@ -83,7 +83,6 @@ body{
   background: linear-gradient(to bottom,#fceaff,#fef8ff,#fceaff);
   text-align: center;
   padding: 10px;
-  /* display: grid; */
   border-radius: 10px;
   box-shadow: 2px 2px 5px rgb(228, 213, 228);
 }
@@ -141,7 +140,6 @@ button{
   width: auto;
   display: flex;
   justify-content: space-evenly;
-  /* align-items: center; */
 }
 
 .wind{

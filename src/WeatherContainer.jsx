@@ -27,7 +27,7 @@ function WeatherContainer() {
 
           if (data.cod === 200) {
              setWeather(data);             
-             upDateBackground(data.weather[0].main);
+             updatebackground(data.weather[0].main);
            } 
            else {
              alert("City not found!");
@@ -44,13 +44,13 @@ function WeatherContainer() {
 
     useEffect(() => {
       if (weather && weather.weather && weather.weather.length > 0) {
-        upDateBackground(weather.weather[0].main);
+        updatebackground(weather.weather[0].main);
       }
     }, [weather]);
     
 
     //function joki update krega background ko based on weather type.
-    const upDateBackground = (weatherType) => {
+    const updatebackground = (weatherType) => {
       const type = weatherType.toLowerCase();
 
       if(type === "clear"){
